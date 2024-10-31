@@ -211,8 +211,8 @@ def cli(
 
         if debug:
             inputs["debug"] = True
-
         patchflow_class = find_patchflow(possbile_module_paths, patchflow_name)
+
         if patchflow_class is None:
             logger.error(f"Patchflow {patchflow_name} not found in {possbile_module_paths}")
             exit(1)

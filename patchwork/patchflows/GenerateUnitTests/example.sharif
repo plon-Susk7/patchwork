@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0",
+  "version": 2.1,
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "ExampleTool",
+          "version": "1.0.0",
+          "informationUri": "https://exampletool.com",
+          "rules": [
+            {
+              "id": "E001",
+              "name": "Example Rule",
+              "shortDescription": {
+                "text": "This is an example rule"
+              },
+              "fullDescription": {
+                "text": "This rule detects an example issue in the code."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
